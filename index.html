@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 
   <style>
     .great-vibes {
@@ -18,6 +18,9 @@
     .montserrat {
       font-family: 'Montserrat', sans-serif;
     }
+    .cormorant {
+      font-family: 'Cormorant Garamond', serif;
+    }
     html {
       scroll-behavior: smooth;
     }
@@ -25,7 +28,7 @@
 </head>
 <body class="text-gray-800 font-sans">
 
-  <!-- 1-парақша -->
+  <!-- Бірінші парақша -->
   <section class="h-screen flex flex-col justify-between text-center px-4 bg-gradient-to-b from-green-100 to-white py-8">
     <div class="flex-1 flex flex-col justify-center items-center">
       <h1 class="text-5xl md:text-7xl text-[#657a63] great-vibes mb-4">Happy Birthday</h1>
@@ -36,10 +39,10 @@
     </div>
   </section>
 
-  <!-- 2-парақша -->
+  <!-- Екінші парақша -->
   <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#f9f9f6] space-y-12">
     <div class="max-w-2xl text-center montserrat space-y-6">
-      <h3 class="text-2xl md:text-3xl font-semibold text-[#657a63]">Құрметті қонақтар!</h3>
+      <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant mb-4">Құрметті қонақтар!</h3>
       <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
         Сіздерді біздің ең ерекше күнімізде —  
         сүйікті қызымыз Енліктің 1 жасқа толу мерекесінде бірге болуға шақырамыз.
@@ -57,14 +60,34 @@
       <div class="grid grid-cols-7 gap-1 text-xs text-gray-600 mt-2">
         <div>Дс</div><div>Сс</div><div>Ср</div><div>Бс</div><div>Жм</div><div>Сб</div><div>Жс</div>
         <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
-        <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div class="bg-green-200 text-[#657a63] font-bold rounded-full">13</div>
-        <div>14</div>
+        <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+        <div class="bg-green-200 text-[#657a63] font-bold rounded-full">14</div>
         <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
         <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
         <div>29</div><div>30</div><div>31</div>
       </div>
     </div>
   </section>
+    <!-- 3-бет: Мекенжай және уақыт -->
+<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-white space-y-10">
+  <div class="max-w-xl text-center montserrat space-y-6">
+    <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant">Мекенжай және уақыт</h3>
 
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      ✨ Мереке <span class="font-semibold">13 шілде, жексенбі күні</span>  
+      <span class="font-semibold">сағат 16:00-де</span> басталады.
+    </p>
+
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      📍 Өтетін орны:<br>
+      <span class="font-semibold">База демалыс “Золотое Солнышко”</span>
+    </p>
+  </div>
+
+  <a href="https://2gis.kz/aktau/geo/70030076876465437/51.316411,43.391552" target="_blank"
+     class="bg-[#657a63] text-white text-sm px-6 py-3 rounded-full shadow hover:bg-[#50624e] transition duration-300">
+    📍 Картада көру
+  </a>
+</section>
 </body>
 </html>
