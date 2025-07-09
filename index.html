@@ -98,13 +98,22 @@
     </a>
   </section>
 
+<!-- Google Fonts қосу -->
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<style>
+  .literata {
+    font-family: 'Literata', serif;
+  }
+</style>
+
 <!-- 4-бет: Бағдарлама -->
 <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#fefaf1] space-y-10">
-  <div class="max-w-xl text-center montserrat space-y-8">
-    <h3 class="text-4xl md:text-5xl text-[#657a63] noto-serif">Бағдарлама</h3>
+  <div class="max-w-xl text-center space-y-10">
+    <!-- Тақырып (сол қалпында) -->
+    <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant">Бағдарлама</h3>
 
-    <div class="text-left space-y-6 text-xl md:text-2xl text-gray-800 cormorant">
-      <!-- Бір жолда сағат пен мәтін -->
+    <!-- Мәтін: жұмсақ шрифтпен -->
+    <div class="text-left space-y-6 text-xl md:text-2xl text-gray-800 literata">
       <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
         <span class="font-extrabold text-2xl text-[#657a63]">16:00</span>
         <span>Қонақтарды қарсы алу және Енліктің тұсаукесері</span>
@@ -122,6 +131,42 @@
         <span>Музыка, би және көңілді кеш</span>
       </div>
     </div>
+  </div>
+</section>
+<!-- 5-бет: Дресс-код -->
+<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-green-100 space-y-10">
+  <div class="max-w-xl text-center space-y-8">
+    <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant">Дресс-код</h3>
+
+    <p class="text-lg md:text-xl text-gray-700 literata leading-relaxed">
+      Мерекелік кешіміз <span class="font-semibold">"Garden style"</span> стилінде өтеді.<br>
+      Киім үлгісі табиғи, жылы, ашық түстерге сай болғаны жөн.
+    </p>
+
+    <!-- Түс блоктары -->
+    <div class="flex justify-center gap-6 flex-wrap mt-6">
+      <!-- Ақ -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-10 h-10 rounded-full bg-white border border-gray-300"></div>
+        <span class="text-sm text-gray-600 montserrat">Ақ</span>
+      </div>
+
+      <!-- Ашық жасыл -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-10 h-10 rounded-full" style="background-color: #d6e8d3;"></div>
+        <span class="text-sm text-gray-600 montserrat">Ашық жасыл</span>
+      </div>
+
+      <!-- Бежевый -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-10 h-10 rounded-full" style="background-color: #f5eadd;"></div>
+        <span class="text-sm text-gray-600 montserrat">Бежевый</span>
+      </div>
+    </div>
+
+    <p class="text-base text-gray-500 italic mt-6">
+      Ауа райына ыңғайлы, жайлы және жеңіл киім таңдаңыздар 🌿
+    </p>
   </div>
 </section>
 
