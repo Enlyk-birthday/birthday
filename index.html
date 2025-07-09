@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&family=Cormorant+Garamond:wght@600&family=Literata&display=swap" rel="stylesheet">
 
   <style>
     .great-vibes {
@@ -21,54 +21,68 @@
     .cormorant {
       font-family: 'Cormorant Garamond', serif;
     }
+    .literata {
+      font-family: 'Literata', serif;
+    }
     html {
       scroll-behavior: smooth;
     }
+
+    /* Анимация появления */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
   </style>
 </head>
 <body class="text-gray-800 font-sans">
 
-  <!-- 1-бет: Тақырып -->
-  <section class="h-screen flex flex-col justify-between text-center px-4 bg-gradient-to-b from-green-100 to-white py-8">
+  <!-- 1-бет -->
+  <section class="min-h-[85vh] flex flex-col justify-between text-center px-4 bg-gradient-to-b from-green-100 to-white py-8 fade-in">
     <div class="flex-1 flex flex-col justify-center items-center">
-      <h1 class="text-5xl md:text-7xl text-[#657a63] great-vibes mb-4">Happy Birthday</h1>
-      <h2 class="text-4xl md:text-6xl text-gray-800 great-vibes">Enlyk 1 жас</h2>
+      <h1 class="text-5xl md:text-7xl text-[#657a63] great-vibes mb-4 delay-1 fade-in">Happy Birthday</h1>
+      <h2 class="text-4xl md:text-6xl text-gray-800 great-vibes delay-2 fade-in">Enlyk 1 жас</h2>
     </div>
-    <div class="text-sm text-gray-600 montserrat mb-6">
-      2025 жыл
-    </div>
+    <div class="text-sm text-gray-600 montserrat mb-6 delay-3 fade-in">2025 жыл</div>
   </section>
 
-  <!-- 2-бет: Шақыру + Күнтізбе -->
-  <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#f9f9f6] space-y-12">
+  <!-- 2-бет -->
+  <section class="min-h-[85vh] flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#f9f9f6] space-y-12 fade-in">
     <div class="max-w-2xl text-center montserrat space-y-6">
-      <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant mb-4">Құрметті қонақтар!</h3>
-      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant mb-4 delay-1 fade-in">Құрметті қонақтар!</h3>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed delay-2 fade-in">
         Сіздерді біздің ең ерекше күнімізде —  
         сүйікті қызымыз Енліктің 1 жасқа толу мерекесінде бірге болуға шақырамыз.
         Жақындармен, гүлдермен, жылылыққа толы ортада бірге болайық!
       </p>
-      <p class="text-md text-gray-500 italic">
+      <p class="text-md text-gray-500 italic delay-3 fade-in">
         Біз үшін бұл күннің әр сәті қымбат. Келіп, қуанышымызды бірге бөлісіңіз!
       </p>
     </div>
 
     <!-- Күнтізбе -->
-    <div class="text-center space-y-2 text-sm text-gray-700 montserrat">
+    <div class="text-center space-y-2 text-sm text-gray-700 montserrat fade-in delay-4">
       <div class="text-base font-semibold tracking-wide">2025 жыл</div>
       <div class="font-semibold">Шілде</div>
-
       <div class="grid grid-cols-7 gap-1 text-xs text-white mt-2 bg-gray-800 p-2 rounded-md">
         <div class="text-gray-300">Дс</div><div class="text-gray-300">Сс</div><div class="text-gray-300">Ср</div>
         <div class="text-gray-300">Бс</div><div class="text-gray-300">Жм</div><div class="text-gray-300">Сб</div><div class="text-gray-300">Жс</div>
-
-        <div></div>
-        <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+        <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
         <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
-
-        <!-- 13 ерекше -->
         <div class="bg-white text-[#657a63] font-bold border-2 border-[#657a63] rounded-md">13</div>
-
         <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
         <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
         <div>28</div><div>29</div><div>30</div><div>31</div>
@@ -76,100 +90,77 @@
     </div>
   </section>
 
-  <!-- 3-бет: Мекенжай -->
-  <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-white space-y-10">
+  <!-- 3-бет -->
+  <section class="min-h-[85vh] flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-white space-y-10 fade-in">
     <div class="max-w-xl text-center montserrat space-y-6">
-      <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant">Мекенжай және уақыт</h3>
-
-      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      <h3 class="text-2xl md:text-3xl text-[#657a63] cormorant delay-1 fade-in">Мекенжай және уақыт</h3>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed delay-2 fade-in">
         ✨ Мереке <span class="font-semibold">13 шілде, жексенбі күні</span>  
         <span class="font-semibold">сағат 16:00-де</span> басталады.
       </p>
-
-      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed delay-3 fade-in">
         📍 Өтетін орны:<br>
         <span class="font-semibold">База отдыха “Золотое Солнышко”</span>
       </p>
     </div>
-
     <a href="https://2gis.kz/aktau/geo/70030076876465437/51.316411,43.391552" target="_blank"
-      class="bg-[#657a63] text-white text-sm px-6 py-3 rounded-full shadow hover:bg-[#50624e] transition duration-300">
+      class="bg-[#657a63] text-white text-sm px-6 py-3 rounded-full shadow hover:bg-[#50624e] transition duration-300 delay-4 fade-in">
       📍 Картада көру
     </a>
   </section>
 
-<!-- Google Fonts қосу -->
-<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
-<style>
-  .literata {
-    font-family: 'Literata', serif;
-  }
-</style>
-
-<!-- 4-бет: Бағдарлама -->
-<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#fefaf1] space-y-10">
-  <div class="max-w-xl text-center space-y-10">
-    <!-- Тақырып (сол қалпында) -->
-    <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant">Бағдарлама</h3>
-
-    <!-- Мәтін: жұмсақ шрифтпен -->
-    <div class="text-left space-y-6 text-xl md:text-2xl text-gray-800 literata">
-      <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
-        <span class="font-extrabold text-2xl text-[#657a63]">16:00</span>
-        <span>Қонақтарды қарсы алу және Енліктің тұсаукесері</span>
-      </div>
-      <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
-        <span class="font-extrabold text-2xl text-[#657a63]">17:00</span>
-        <span>Мерекелік дастархан, фуршет және тәттілер</span>
-      </div>
-      <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
-        <span class="font-extrabold text-2xl text-[#657a63]">18:30</span>
-        <span>Балаларға арналған ойын-сауық бағдарламасы</span>
-      </div>
-      <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
-        <span class="font-extrabold text-2xl text-[#657a63]">19:00</span>
-        <span>Музыка, би және көңілді кеш</span>
+  <!-- 4-бет -->
+  <section class="min-h-[85vh] flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-[#fefaf1] space-y-10 fade-in">
+    <div class="max-w-xl text-center space-y-10">
+      <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant delay-1 fade-in">Бағдарлама</h3>
+      <div class="text-left space-y-6 text-xl md:text-2xl text-gray-800 literata delay-2 fade-in">
+        <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
+          <span class="font-extrabold text-2xl text-[#657a63]">16:00</span>
+          <span>Қонақтарды қарсы алу және Енліктің тұсаукесері</span>
+        </div>
+        <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
+          <span class="font-extrabold text-2xl text-[#657a63]">17:00</span>
+          <span>Мерекелік дастархан, фуршет және тәттілер</span>
+        </div>
+        <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
+          <span class="font-extrabold text-2xl text-[#657a63]">18:30</span>
+          <span>Балаларға арналған ойын-сауық бағдарламасы</span>
+        </div>
+        <div class="grid grid-cols-[auto,1fr] gap-4 items-start">
+          <span class="font-extrabold text-2xl text-[#657a63]">19:00</span>
+          <span>Музыка, би және көңілді кеш</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- 5-бет: Дресс-код -->
-<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-green-100 space-y-10">
-  <div class="max-w-xl text-center space-y-8">
-    <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant">Дресс-код</h3>
+  </section>
 
-    <p class="text-lg md:text-xl text-gray-700 literata leading-relaxed">
-      Мерекелік кешіміз <span class="font-semibold">"Garden style"</span> стилінде өтеді.<br>
-      Киім үлгісі табиғи, жылы, ашық түстерге сай болғаны жөн.
-    </p>
-
-    <!-- Түс блоктары -->
-    <div class="flex justify-center gap-6 flex-wrap mt-6">
-      <!-- Ақ -->
-      <div class="flex flex-col items-center space-y-2">
-        <div class="w-10 h-10 rounded-full bg-white border border-gray-300"></div>
-        <span class="text-sm text-gray-600 montserrat">Ақ</span>
+  <!-- 5-бет -->
+  <section class="min-h-[85vh] flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-[#fefaf1] to-green-100 space-y-10 fade-in">
+    <div class="max-w-xl text-center space-y-8">
+      <h3 class="text-4xl md:text-5xl text-[#657a63] cormorant delay-1 fade-in">Дресс-код</h3>
+      <p class="text-lg md:text-xl text-gray-700 literata leading-relaxed delay-2 fade-in">
+        Мерекелік кешіміз <span class="font-semibold">"Garden style"</span> стилінде өтеді.<br>
+        Киім үлгісі табиғи, жылы, ашық түстерге сай болғаны жөн.
+      </p>
+      <div class="flex justify-center gap-6 flex-wrap mt-6 delay-3 fade-in">
+        <div class="flex flex-col items-center space-y-2">
+          <div class="w-10 h-10 rounded-full bg-white border border-gray-300"></div>
+          <span class="text-sm text-gray-600 montserrat">Ақ</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <div class="w-10 h-10 rounded-full" style="background-color: #d6e8d3;"></div>
+          <span class="text-sm text-gray-600 montserrat">Ашық жасыл</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <div class="w-10 h-10 rounded-full" style="background-color: #f5eadd;"></div>
+          <span class="text-sm text-gray-600 montserrat">Бежевый</span>
+        </div>
       </div>
-
-      <!-- Ашық жасыл -->
-      <div class="flex flex-col items-center space-y-2">
-        <div class="w-10 h-10 rounded-full" style="background-color: #d6e8d3;"></div>
-        <span class="text-sm text-gray-600 montserrat">Ашық жасыл</span>
-      </div>
-
-      <!-- Бежевый -->
-      <div class="flex flex-col items-center space-y-2">
-        <div class="w-10 h-10 rounded-full" style="background-color: #f5eadd;"></div>
-        <span class="text-sm text-gray-600 montserrat">Бежевый</span>
-      </div>
+      <p class="text-base text-gray-500 italic mt-6 delay-4 fade-in">
+        Ауа райына ыңғайлы, жайлы және жеңіл киім таңдаңыздар 🌿
+      </p>
     </div>
-
-    <p class="text-base text-gray-500 italic mt-6">
-      Ауа райына ыңғайлы, жайлы және жеңіл киім таңдаңыздар 🌿
-    </p>
-  </div>
-</section>
-
+  </section>
 
 </body>
 </html>
